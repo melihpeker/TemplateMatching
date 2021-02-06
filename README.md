@@ -22,15 +22,14 @@ The script outputs the corner points of the found template and the rotational an
 ## Example Small Area Outputs
 The output locations of _Small_area.png_ and _Small_area_rotated.png_ is found by scirpt as follows:
 
-- Small_area.png
-
-    Top Left: [855,150]
+### Small_area.png
+    Top Left: [855,150] 
     Top Rigth: [969,150]
     Bottom Left: [855,264]
     Bottom Rigth: [969,264]
     Tilt Angle: 0.0 degree
-
-- Small_are_rotated.png
+    
+### Small_are_rotated.png
     Top Left: [420,639]
     Top Rigth: [552,560]
     Bottom Left: [499,771]
@@ -41,8 +40,8 @@ When we visualize these coordinate, we can see the locations of the small patche
 
 Image:
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+![](https://github.com/melihpeker/TemplateMatching/blob/main/Images/output.png)
 
-> Follow your heart.
+> Bounding boxes drawn according to output of the algorithm.
 
     
