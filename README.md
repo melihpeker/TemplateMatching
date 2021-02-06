@@ -1,7 +1,7 @@
 # TemplateMatching
 This is a simple Python script for Template Matching task. I take the image and uses **cv2.matchTemplate** function, which uses a FFT based method to find the correlation between the input image and template. However, this method is rotation variant, meaning that it does not perform matching if the template or input image is rotated. In order to make it rotation invariant, I rotate the template image in different angles and try matching for each tried angle. Score for each rotational angle is stored and best scored match is given as final result.
 
-Although this method is robust, it works slow. In order to speed up the process, first, I create an image pyramid and downsample both input and template by 0.5. Afterwards, to increase the matching success and easy feauters, I apply a thresohold and convert image to binary. Then do a quick template matching on those binary, downsized images with 180 different rotational angles and record the scores for those angles.
+Although this method is robust, it works slow. In order to speed up the process, first, I create an image pyramid and downsize both input and template images by 0.5. Afterwards, to increase the matching success and easy feauters, I apply a threshold and convert image to binary. Then do a quick template matching on those binary, downsized images with 180 different rotational angles and record the scores for those angles.
 
 After we get the scores for small and 180 rotational angles, for a finer grained matching, I apply template matching using full frames around the angle that gave maximum score in previous run. The angle that gives the highest score is recorded with the top left coordinates.
 
