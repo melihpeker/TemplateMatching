@@ -15,7 +15,7 @@ It requires following libraries:
 
 ## Run Demo
 In order to run the script:
-`$ python3 templateMatching.py StarMap.png Small_area.png `
+`$ python3 templateMatching.py Images/StarMap.png Images/Small_area.png `
 where, _StarMap.png_ is the search image and _Small_area.png_ is the template that we wanted to find.
 
 ## Output
