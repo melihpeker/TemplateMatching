@@ -87,7 +87,6 @@ top_left = max_locs[maxInd]
 
 # Fine grain search    
 for i in tqdm(range(max(maxInd-5,0),min(maxInd+5,360),1)):
-#for i in tqdm(range(0,360,1)):
     M = cv2.getRotationMatrix2D(center, degrees[0,i], 1.0)
     templateRot = cv2.warpAffine(template, M, (h, w))
   
